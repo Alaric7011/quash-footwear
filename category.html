@@ -41,23 +41,27 @@
       </button>
     </div>
 
-    <div class="nav__drawer" id="nav-drawer" aria-hidden="true">
-      <div class="nav__drawer-head">
-        <span class="nav__brand-name">QUASH</span>
-        <button class="nav__drawer-close" id="nav-close" aria-label="Close menu">&times;</button>
-      </div>
-      <nav class="nav__drawer-links" aria-label="Mobile primary">
-        <a href="index.html" class="nav__drawer-link">Home</a>
-        <a href="index.html#collections" class="nav__drawer-link is-active">Collections</a>
-        <a href="index.html#about" class="nav__drawer-link">About</a>
-        <a href="index.html#contact" class="nav__drawer-link">Contact</a>
-      </nav>
-      <div class="nav__drawer-foot">
-        <span id="drawer-phone">+91 98765 43210</span>
-        <span id="drawer-hours">Mon – Sat, 10:00 AM – 8:00 PM</span>
-      </div>
-    </div>
   </header>
+
+  <!-- Mobile drawer — must live OUTSIDE <header> so its position:fixed
+       anchors to the viewport, not to the nav's backdrop-filter
+       containing block. -->
+  <div class="nav__drawer" id="nav-drawer" aria-hidden="true">
+    <div class="nav__drawer-head">
+      <span class="nav__brand-name">QUASH</span>
+      <button class="nav__drawer-close" id="nav-close" aria-label="Close menu">&times;</button>
+    </div>
+    <nav class="nav__drawer-links" aria-label="Mobile primary">
+      <a href="index.html" class="nav__drawer-link">Home</a>
+      <a href="index.html#collections" class="nav__drawer-link is-active">Collections</a>
+      <a href="index.html#about" class="nav__drawer-link">About</a>
+      <a href="index.html#contact" class="nav__drawer-link">Contact</a>
+    </nav>
+    <div class="nav__drawer-foot">
+      <span id="drawer-phone">+91 98765 43210</span>
+      <span id="drawer-hours">Mon – Sat, 10:00 AM – 8:00 PM</span>
+    </div>
+  </div>
 
   <main>
 
